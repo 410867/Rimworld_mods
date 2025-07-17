@@ -8,21 +8,43 @@ using Verse;
 
 namespace FP_RSLUM
 {
-    class PawnColumnWorker_Label : RimWorld.PawnColumnWorker_Label
+	class PawnColumnWorker_Label : RimWorld.PawnColumnWorker_Label
 	{
+		public const int TopAreaHeight = 65;
+		public const int ManageLoadoutButtonHeight = 32;
+
 		public override void DoHeader(Rect rect, PawnTable table)
 		{
-			bool flag = Mouse.IsOver(rect);
-			// if (flag && Event.current.type == null && (Event.current.button == 0 || Event.current.button == 1))
-			// {
-			// 	this.Sort(rect, table, Event.current.control);
-			// 	return;
-			// }
 			base.DoHeader(rect, table);
+			bool flag = Mouse.IsOver(rect);
 			if (flag)
 			{
 				TooltipHandler.TipRegion(rect, this.GetHeaderTip(table));
 			}
+			Rect rect1 = new Rect(rect.x, rect.y + (rect.height - 65f), Mathf.Min(rect.width, 360f), 32f);
+			if (Widgets.ButtonText(rect1, (string)"LvTab_Next".Translate()))
+			{
+				// this.DoListShiftButton(rect1);
+				// this.Sort(rect1, table, true);
+				FP_RSLUM_mod.TabViewPawnCategory += 1;
+				if ((FP_RSLUM_mod.TabViewPawnCategory == 2) && !ModsConfig.BiotechActive) // no biotech, no mech level.
+					FP_RSLUM_mod.TabViewPawnCategory = 3;
+				if ((FP_RSLUM_mod.TabViewPawnCategory == 3) && !ModsConfig.AnomalyActive) // no anomaly, no ghoul level.
+					FP_RSLUM_mod.TabViewPawnCategory = 0;
+				if (FP_RSLUM_mod.TabViewPawnCategory > 3)
+					FP_RSLUM_mod.TabViewPawnCategory = 0;
+			}
+			UIHighlighter.HighlightOpportunity(rect1, "LvTab_Next");
+			// refresh the table
+			if (table != null)
+			{
+				table.SetDirty();
+			}
+		}
+
+		public override int GetMinHeaderHeight(PawnTable table)
+		{
+			return Mathf.Max(base.GetMinHeaderHeight(table), 65);
 		}
 
 		public void Sort(Rect rect, PawnTable table, bool byKind)

@@ -28,6 +28,5 @@ C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.5\Assemblies\FP_RSLUM.
 C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.5\Assemblies\FP_RSLUM.pdb
 C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.6\Assemblies\FP_RSLUM.dll
 C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.6\Assemblies\FP_RSLUM.pdb
-C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.6\Source\FP_RSLUM\obj\Debug\FP_RSLUM.csprojAssemblyReference.cache
 C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.6\Source\FP_RSLUM\obj\Debug\FP_RSLUM.dll
 C:\Users\unisu\git\Rimworld_mods\RPG_Style_Level_Up_Mod\1.6\Source\FP_RSLUM\obj\Debug\FP_RSLUM.pdb

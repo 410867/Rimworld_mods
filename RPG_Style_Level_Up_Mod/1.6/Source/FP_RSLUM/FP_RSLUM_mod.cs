@@ -11,6 +11,7 @@ namespace FP_RSLUM
     {
 
         public static FP_RSLUM_setting Settings;
+        public static int TabViewPawnCategory = 0; // 0: colonist, 1: animal, 2: mech, 3: zombie
 
         public FP_RSLUM_mod(ModContentPack content)
             : base(content)

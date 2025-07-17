@@ -4,9 +4,9 @@
   <PawnTableDef>
     <defName>FP_RSLUM_MainTable</defName>
     <label>Colonists</label>
-    <workerClass>FP_RSLUM.PawnTable_LevelMain</workerClass>
+    <workerClass>PawnTable_PlayerPawns</workerClass>
     <columns>
-      <li>Label</li>
+      <li>FP_RSLUM_Label</li>
       <li>FP_RSLUM_Level</li>
       <li>FP_RSLUM_EXP</li>
 	  <li>FP_RSLUM_Need_EXP</li>
