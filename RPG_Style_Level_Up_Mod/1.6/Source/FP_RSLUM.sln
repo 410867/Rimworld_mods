@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FP_RSLUM", "FP_RSLUM\FP_RSLUM.csproj", "{71BD5F4E-1A27-463F-8266-AA10EBCFAE2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71BD5F4E-1A27-463F-8266-AA10EBCFAE2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71BD5F4E-1A27-463F-8266-AA10EBCFAE2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71BD5F4E-1A27-463F-8266-AA10EBCFAE2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71BD5F4E-1A27-463F-8266-AA10EBCFAE2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EEE4B448-1844-49EB-9B5C-2BAD6318EF1A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<hediffClass>FPDBDHook.Hediff_MeatHook</hediffClass>
+		<defaultLabelColor>(0.78, 0.0, 0.0)</defaultLabelColor>
+		<defName>FPDBDHookhediff</defName>
+		<description>hooked and bleeding.</description>
+		<label>hooked</label>
+		<labelNoun>hooked</labelNoun>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>300</min>
+					<max>300</max>
+				</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+</Defs>

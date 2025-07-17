@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Lord of the Rims - Elves</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRE_Bow_Mirkwood"]</xpath>
+					<value>
+						<comps>
+							<li>
+								<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+							</li>
+						</comps>
+					</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="LotRE_Bow_Mirkwood"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRE_Arrow_Mirkwood</defaultProjectile>
+								<warmupTime>0.6</warmupTime>
+								<range>38</range>
+								<soundCast>LotRE_BowMirkwood</soundCast>
+								<desc>normal shot</desc>
+								<label>Normal shot</label>
+								<texPath>UI/normalshot</texPath>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
+							</li>
+						</verbs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRE_Bow_Mirkwood"]/verbs</xpath>
+					<value>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRE_Arrow_Mirkwood</defaultProjectile>
+								<warmupTime>1.8</warmupTime>
+								<range>38</range>
+								<burstShotCount>5</burstShotCount>
+								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+								<soundCast>LotRE_BowMirkwood</soundCast>
+								<desc>Splits one arrow into several.</desc>
+								<label>Multiple shot</label>
+								<texPath>UI/multipleshot</texPath>
+								<accuracyTouch>-0.4</accuracyTouch>
+								<accuracyShort>-0.4</accuracyShort>
+								<accuracyMedium>-0.4</accuracyMedium>
+								<accuracyLong>-0.4</accuracyLong>
+							</li>
+					</value>
+				</li>
+
+
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRE_Bow_Galadhrim"]/comps</xpath>
+						<value>
+							<li>
+								<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+							</li>
+						</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="LotRE_Bow_Galadhrim"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRE_Arrow_Galadhrim</defaultProjectile>
+								<warmupTime>1.5</warmupTime>
+								<range>44</range>
+								<soundCast>LotRE_BowLongbow</soundCast>
+								<desc>normal shot</desc>
+								<label>Normal shot</label>
+								<texPath>UI/normalshot</texPath>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
+							</li>
+						</verbs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRE_Bow_Galadhrim"]/verbs</xpath>
+					<value>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRE_Arrow_Galadhrim</defaultProjectile>
+								<warmupTime>4.0</warmupTime>
+								<range>44</range>
+								<burstShotCount>5</burstShotCount>
+								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+								<soundCast>LotRE_BowLongbow</soundCast>
+								<desc>Splits one arrow into several.</desc>
+								<label>Multiple shot</label>
+								<texPath>UI/multipleshot</texPath>
+								<accuracyTouch>-0.4</accuracyTouch>
+								<accuracyShort>-0.4</accuracyShort>
+								<accuracyMedium>-0.4</accuracyMedium>
+								<accuracyLong>-0.4</accuracyLong>
+							</li>
+					</value>
+				</li>
+
+
+					<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRE_Bow_Rivendell"]/comps</xpath>
+						<value>
+							<li>
+								<compClass>AdditionalVerb.Comp_VerbSaveable</compClass>
+							</li>
+						</value>
+				</li>
+
+				<li Class="PatchOperationReplace">
+					<xpath>*/ThingDef[defName="LotRE_Bow_Rivendell"]/verbs</xpath>
+					<value>
+						<verbs>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRE_Arrow_Rivendell</defaultProjectile>
+								<warmupTime>1.4</warmupTime>
+								<range>46</range>
+								<soundCast>LotRE_BowLongbow</soundCast>
+								<desc>normal shot</desc>
+								<label>Normal shot</label>
+								<texPath>UI/normalshot</texPath>
+								<accuracyTouch>0</accuracyTouch>
+								<accuracyShort>0</accuracyShort>
+								<accuracyMedium>0</accuracyMedium>
+								<accuracyLong>0</accuracyLong>
+							</li>
+						</verbs>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>*/ThingDef[defName="LotRE_Bow_Rivendell"]/verbs</xpath>
+					<value>
+							<li Class="AdditionalVerb.VerbProperties_Custom">
+								<verbClass>Verb_Shoot</verbClass>
+								<hasStandardCommand>true</hasStandardCommand>
+								<defaultProjectile>LotRE_Arrow_Rivendell</defaultProjectile>
+								<warmupTime>4.0</warmupTime>
+								<range>46</range>
+								<burstShotCount>5</burstShotCount>
+								<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+								<soundCast>LotRE_BowLongbow</soundCast>
+								<desc>Splits one arrow into several.</desc>
+								<label>Multiple shot</label>
+								<texPath>UI/multipleshot</texPath>
+								<accuracyTouch>-0.4</accuracyTouch>
+								<accuracyShort>-0.4</accuracyShort>
+								<accuracyMedium>-0.4</accuracyMedium>
+								<accuracyLong>-0.4</accuracyLong>
+							</li>
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+</Patch>
